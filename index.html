@@ -1,0 +1,14 @@
+<html>
+<body style="text-align:center; font-family:Arial; background:#FFF9E6; padding:30px;">
+<h1>درس حرف الألف</h1>
+<p>أ - أسد</p>
+<button onclick="speak()" style="font-size:25px; padding:15px; background:#FFC107; border-radius:15px;">🔊 اسمع الشرح</button>
+<script>
+function speak(){
+  let u = new SpeechSynthesisUtterance("حرف الألف. أ مثل أسد. أ مثل أرنب. يلا نردد مع بعض. ألف. ألف. أسد.");
+  u.lang = 'ar-EG';
+  speechSynthesis.speak(u);
+}
+</script>
+</body>
+</html>
